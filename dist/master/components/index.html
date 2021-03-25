@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>slate-css</title>
+
+  <link rel="stylesheet" type="application/rss+xml" href="http://localhost:8080/feed.xml" title="" />
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic|Anonymous+Pro:400,700,400italic,700italic|Merriweather:400,700,300" />
+  <link rel="stylesheet" type="text/css" href="/css/slate.css" />
+  <link rel="stylesheet" type="text/css" href="/css/main.css" />
+  
+  <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
+  <script src="/js/docs.js" defer></script>
+
+</head>
+<body class="" data-theme="docs">
+    <header class="container row" x-data="{ show: false }">
+      <a class="brand" href="http://localhost:8080">slate-css</a>
+      <span class="badge badge--primary">0.1.0-alpha.9</span>
+      <nav class="nav nav@xs" :class="{ 'active': show }">
+          <ul class="nav-items">
+              <li class="nav-item"><a class="nav-link" href="/docs/">Docs</a></li>
+              <li class="nav-item"><a class="nav-link active" href="/components/" >Components</a></li>
+          </ul>
+      </nav>
+      <button class="nav-toggle@xs ml-auto" :class="{ 'active': show }" type="button" @click="show = !show"><svg fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg></button>
+    </header><section class="page container">
+    <div class="row">
+        <div class="col" x-data="{ show: false }">
+            <button class="nav-toggle@s ml-auto" :class="{ 'active': show }" type="button" @click="show = !show"><svg fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg></button>
+            <nav class="page-nav nav@s nav--stacked" :class="{ 'active': show }">
+                <ul class="nav-items">
+                    <li class="nav-item"><a class="nav-link" href="#general">General</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#navigation">Navigation</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="col-10@m">
+            <h1>Components</h1>
+            <h2 id="navigation">General</h2>
+<div class="row">
+    <div class="col-4">
+        <div class="component">
+            <a href="/components/panel.html">
+                <div class="icon"></div>
+                <div class="p">
+                    <div class="title text-m">Panel</div>
+                    <p class="text--gray">Group other componenets with a simple panel</p>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="col-4">
+        <div class="component">
+            <a href="/components/dropdown.html">
+                <div class="icon"></div>
+                <div class="p">
+                    <div class="title text-m">Dropdown</div>
+                    <p class="text--gray">xx</p>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+
+<h2 id="navigation">Navigation</h2>
+<div class="row">
+    <div class="col-4">
+        <div class="component">
+            <a href="/components/navbar.html">
+                <div class="icon"></div>
+                <div class="p">
+                    <div class="title text-m">Navbar</div>
+                    <p class="text--gray">A complete brandable navbar</p>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="col-4">
+        <div class="component">
+            <a href="/components/nav.html">
+                <div class="icon"></div>
+                <div class="p">
+                    <div class="title text-m">Nav</div>
+                    <p class="text--gray">A fully responsive nav with a few different styles</p>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>

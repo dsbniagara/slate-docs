@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>slate-css</title>
+
+  <link rel="stylesheet" type="application/rss+xml" href="http://localhost:8080/feed.xml" title="Ramblings of an immor(t)al demigod" />
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic|Anonymous+Pro:400,700,400italic,700italic|Merriweather:400,700,300" />
+  <link rel="stylesheet" type="text/css" href="/css/slate.css" />
+  <link rel="stylesheet" type="text/css" href="/css/main.css" />
+
+</head>
+<body class="" data-theme="docs">
+    <header class="container row" x-data="{ show: false }">
+      <a class="brand" href="http://localhost:8080">slate-css</a>
+      <span class="badge badge--primary">0.1.0-alpha.8</span>
+      <nav class="nav nav@xs" :class="{ 'active': show }">
+          <ul class="nav-items">
+              <li class="nav-item"><a class="nav-link" href="/docs/">Docs</a></li>
+              <li class="nav-item"><a class="nav-link" href="components.html" >Components</a></li>
+          </ul>
+      </nav>
+      <button class="nav-toggle@xs ml-auto" :class="{ 'active': show }" type="button" @click="show = !show"><svg fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg></button>
+    </header>
+<div class="container">
+  <section class="hero text-center">
+    <h1>A Modern <b>UI System</b></h1>
+    <p>Slate is a small front end framework for building reusable interfaces.</p>
+
+    <div class="rectangular-plane">
+        <div class="rectangular-group">
+            <div class="rectangle rectangle--xl rectangle--outline"></div>
+            <div class="ml-3 rectangle rectangle--l"></div>
+        </div>
+        <div class="rectangular-group">
+            <div class="rectangle rectangle--xxl rectangle--dark"></div>
+            <div class="ml-8 rectangle rectangle--outline rectangle--gray"></div>
+            <div class="ml-5 rectangle rectangle--l"></div>
+        </div>
+        <div class="rectangular-group">
+            <div class="ml-7 rectangle rectangle--xl rectangle--dark"></div>
+            <div class="fl rectangle rectangle--xl rectangle--dark"></div>
+            <div class="fl ml-1 rectangle rectangle"></div>
+        </div>
+        <div class="rectangular-group">
+            <div class="rectangle rectangle--l rectangle--outline"></div>
+            <div class="ml-1 rectangle rectangle--xl"></div>
+        </div>
+        <div class="rectangular-group">
+            <div class="rectangle rectangle--l"></div>
+        </div>
+        <div class="rectangular-group">
+            <div class="rectangle rectangle--l rectangle--outline"></div>
+        </div>
+    </div>
+  </section>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>slate-css</title>
+
+  <link rel="stylesheet" type="application/rss+xml" href="http://localhost:8080/feed.xml" title="" />
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic|Anonymous+Pro:400,700,400italic,700italic|Merriweather:400,700,300" />
+  <link rel="stylesheet" type="text/css" href="/css/slate.css" />
+  <link rel="stylesheet" type="text/css" href="/css/main.css" />
+  
+  <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
+  <script src="/js/docs.js" defer></script>
+
+</head>
+<body class="" data-theme="docs">
+    <header class="container row" x-data="{ show: false }">
+      <a class="brand" href="http://localhost:8080">slate-css</a>
+      <span class="badge badge--primary">0.1.0-alpha.9</span>
+      <nav class="nav nav@xs" :class="{ 'active': show }">
+          <ul class="nav-items">
+              <li class="nav-item"><a class="nav-link" href="/docs/">Docs</a></li>
+              <li class="nav-item"><a class="nav-link" href="/components/" >Components</a></li>
+          </ul>
+      </nav>
+      <button class="nav-toggle@xs ml-auto" :class="{ 'active': show }" type="button" @click="show = !show"><svg fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg></button>
+    </header><section class="page container">
+    <h1>Navbar</h1>
+    <div id="docs">
+<demo component="navbar_cta"></demo>
+<a href="navbar_cta.html"></a>
+
+<p><demo component="navbar_dark_logo"></demo>
+<a href="navbar_dark_logo.html"></a></p>
+</div>
+</section>
+
+</body>
+</html>

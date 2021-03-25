@@ -1,0 +1,17 @@
+{
+  "name": "slate-docs",
+  "scripts": {
+    "dev": "wintersmith preview",
+    "build": "wintersmith build"
+  },
+  "dependencies": {
+    "@dsbn/slate-css": "^0.1.0-alpha.10",
+    "coffeedoc": "~0.3.1",
+    "marked": "~0.3.5",
+    "shelljs": "^0.5.3",
+    "underscore": "~1.4.4",
+    "wintersmith": "^2.5.0",
+    "wintersmith-ejs": "^0.1.4"
+  },
+  "private": true
+}

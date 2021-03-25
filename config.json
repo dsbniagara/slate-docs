@@ -1,0 +1,18 @@
+{
+  "locals": {
+    "url": "http://localhost:8080",
+    "name": "slate-css",
+    "version": "0.1.0-alpha.9"
+  },
+  "plugins": [
+    "./plugins/page.coffee",
+    "wintersmith-ejs"
+  ],
+  "require": {
+    "_": "underscore"
+  },
+  "markdown": {
+    "smartLists": true,
+    "smartypants": true
+  }
+}
