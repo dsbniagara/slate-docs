@@ -2,10 +2,11 @@
   "name": "slate-docs",
   "scripts": {
     "dev": "wintersmith preview",
-    "build": "wintersmith build"
+    "build": "wintersmith build",
+    "cp:slate": "cp ./node_modules/@dsbn/slate-css/css/slate.css ./contents/css/slate.css"
   },
   "dependencies": {
-    "@dsbn/slate-css": "^0.1.0-alpha.10",
+    "@dsbn/slate-css": "^0.1.0-alpha.11",
     "coffeedoc": "~0.3.1",
     "marked": "~0.3.5",
     "shelljs": "^0.5.3",

@@ -1,5 +1,5 @@
 ---
-title: A Modern <b>UI System</b>
+title: A CSS <b>Framework</b>
 template: index.ejs
 ---
 

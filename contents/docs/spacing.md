@@ -31,11 +31,11 @@ template: docs.ejs
 <div class="p outline">
     Normal Padding
 </div>
-<div class="p space-xxs outline">
-    Padding with space-xxs
+<div class="p space--xxs outline">
+    Padding with space--xxs
 </div>
-<div class="p space-xxxl outline">
-    <p>Padding with space-xxxl</p>
+<div class="p space--xxxl outline">
+    <p>Padding with space--xxxl</p>
     <div class="btn">Button</div>
 </div>
 
@@ -129,8 +129,16 @@ template: docs.ejs
                 <td><code>margin: 0 var(--space)</code></td>
             </tr>
             <tr>
+                <td>.mx-auto</td>
+                <td><code>margin-left: var(--space); margin-right: var(--space)</code></td>
+            </tr>
+            <tr>
                 <td>.my</td>
                 <td><code>margin: var(--space) 0</code></td>
+            </tr>
+            <tr>
+                <td>.my-auto</td>
+                <td><code>margin-top: var(--space); margin-bottom: var(--space)</code></td>
             </tr>
             <tr>
                 <td>.ml</td>

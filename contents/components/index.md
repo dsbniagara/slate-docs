@@ -22,7 +22,18 @@ template: components.ejs
                 <div class="icon"></div>
                 <div class="p">
                     <div class="title text-m">Dropdown</div>
-                    <p class="text--gray">xx</p>
+                    <p class="text--gray"></p>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="col-4">
+        <div class="component">
+            <a href="/components/alert.html">
+                <div class="icon"></div>
+                <div class="p">
+                    <div class="title text-m">Alert</div>
+                    <p class="text--gray"></p>
                 </div>
             </a>
         </div>

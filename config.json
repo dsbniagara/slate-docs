@@ -2,12 +2,18 @@
   "locals": {
     "url": "http://localhost:8080",
     "name": "slate-css",
-    "version": "0.1.0-alpha.9"
+    "version": "0.1.0-alpha.11"
   },
   "plugins": [
+    "./plugins/slate.coffee",
     "./plugins/page.coffee",
     "wintersmith-ejs"
   ],
+  "sassify": {
+    "outputStyle": "compressed",
+    "sourceComments": "false",
+    "sourceMap": true
+  },
   "require": {
     "_": "underscore"
   },

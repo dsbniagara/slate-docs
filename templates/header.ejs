@@ -8,7 +8,6 @@
 
   <link rel="stylesheet" type="application/rss+xml" href="<%= locals.url %>/feed.xml" title="<%= locals.description %>" />
   <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic|Anonymous+Pro:400,700,400italic,700italic|Merriweather:400,700,300" />
-  <link rel="stylesheet" type="text/css" href="/css/slate.css" />
   <link rel="stylesheet" type="text/css" href="<%= contents.css['main.css'].url %>" />
   
   <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.js" defer></script>
@@ -17,14 +16,15 @@
 
 </head>
 <body class="<%=locals.bodyclass%>" data-theme="docs">
-    <header class="container row" x-data="{ show: false }">
-      <a class="brand" href="<%= locals.url %>"><%= locals.name %></a>
-      <span class="badge badge--primary"><%= locals.version %></span>
-      <nav class="nav nav@xs" :class="{ 'active': show }">
-          <ul class="nav-items">
-              <li class="nav-item"><a class="nav-link<% if (page.url === '/docs/') { %> active<% } %>" href="/docs/">Docs</a></li>
-              <li class="nav-item"><a class="nav-link<% if (page.url === '/components/') { %> active<% } %>" href="/components/" >Components</a></li>
-          </ul>
-      </nav>
-      <button class="nav-toggle@xs ml-auto" :class="{ 'active': show }" type="button" @click="show = !show"><svg fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg></button>
-    </header>
+  
+  <header class="container row" x-data="{ show: false }">
+    <a class="brand" href="<%= locals.url %>"><%= locals.name %></a>
+    <span class="badge badge--primary"><%= locals.version %></span>
+    <nav class="nav nav@xs" :class="{ 'active': show }">
+        <ul class="nav-items">
+            <li class="nav-item"><a class="nav-link<% if (page.url === '/docs/') { %> active<% } %>" href="/docs/">Docs</a></li>
+            <li class="nav-item"><a class="nav-link<% if (page.url === '/components/') { %> active<% } %>" href="/components/" >Components</a></li>
+        </ul>
+    </nav>
+    <button class="nav-toggle@xs ml-auto" :class="{ 'active': show }" type="button" @click="show = !show"><svg fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg></button>
+  </header>
