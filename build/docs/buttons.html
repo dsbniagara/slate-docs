@@ -22,7 +22,7 @@
     <span class="badge badge--primary">0.1.0-alpha.11</span>
     <nav class="nav nav@xs" :class="{ 'active': show }">
         <ul class="nav-items">
-            <li class="nav-item"><a class="nav-link active" href="/docs/">Docs</a></li>
+            <li class="nav-item"><a class="nav-link" href="/docs/">Docs</a></li>
             <li class="nav-item"><a class="nav-link" href="/components/" >Components</a></li>
         </ul>
     </nav>
@@ -33,11 +33,11 @@
             <button class="nav-toggle@s ml-auto" :class="{ 'active': show }" type="button" @click="show = !show"><svg fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg></button>
             <nav class="page-nav nav@s nav--stacked" :class="{ 'active': show }">
                 <ul class="nav-items">
-                    <li class="nav-item"><a class="nav-link active" href="/docs/">Introduction</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/docs/">Introduction</a></li>
                     <li class="nav-item"><a class="nav-link" href="/docs/installation.html">Installation</a></li>
                     <li class="nav-item"><a class="nav-link"" href="/docs/typography.html">Typography</a></li>
                     <li class="nav-item"><a class="nav-link"" href="/docs/layout.html">Layout</a></li>
-                    <li class="nav-item"><a class="nav-link"" href="/docs/buttons.html">Buttons</a></li>
+                    <li class="nav-item"><a class="nav-link active"" href="/docs/buttons.html">Buttons</a></li>
                     <li class="nav-item"><a class="nav-link"" href="/docs/forms.html">Forms</a></li>
                     <li class="nav-item"><a class="nav-link"" href="/docs/table.html">Table</a></li>
                     <li class="nav-item"><a class="nav-link"" href="/docs/spacing.html">Spacing</a></li>
@@ -49,13 +49,39 @@
             </nav>
         </div>
         <div class="col-10@m">
-            <h1>Introduction</h1>
-            <p class="text-l">Slate is a small front end framework for building reusable interfaces.</p>
-<p class="alert alert--warning">Slate is under heavy internal developement. Breaking changes will occur as the api is finalized.</p>
-<h2>The Goal</h2>
-<p>The goal of slate is to expand traditional css frameworks by providing a robust set of ui components. All components are defined with html and css only to avoid javascript dependance, making them highly reusable. Each piece is designed to have clear usage patterns and to be as modular as possible. You should be able to install one compoment without 120kb of scaffolding.</p>
+            <h1>Buttons</h1>
+            <p>Button styles are located in base/buttons.css, include just buttons with @slate base/buttons.</p>
 
-<p><a class="btn btn--m btn--primary" href="docs/installation.html">Installation</a></p>
+<pre class="code">:root {
+    --btn-radius: .4rem;
+    --btn-font-weight: 500;
+    --btn-font-size: 1em;
+    --btn-font-size-s: calc(var(--btn-font-size) - 0.2em);
+    --btn-font-size-m: calc(var(--btn-font-size) + 0.2em);
+    --btn-font-size-l: calc(var(--btn-font-size) + 0.4em);
+    --btn-padding-x: var(--space-m);
+    --btn-padding-y: var(--space-xs);
+    --btn-shadow: none;
+    --btn-shadow-hover: none;
+    --btn-border-default: 1px solid var(--color-gray-lighter);
+}</pre>
+<p>Buttons come in a few variants with sizing variants.</p>
+
+<h2 id="variants">Variants</h2>
+<p><button class="btn" type="button">.btn</button>
+<button class="btn btn--primary" type="button">.btn–primary</button>
+<button class="btn btn--accent" type="button">.btn–accent</button>
+<button class="btn btn--subtle" type="button">.btn–subtle</button></p>
+<h2 id="sizes">Sizes</h2>
+<p><button class="btn btn--primary" type="button">.btn</button>
+<button class="btn btn--primary btn--l" type="button">.btn–l</button>
+<button class="btn btn--primary btn--m" type="button">.btn–m</button>
+<button class="btn btn--primary btn--s" type="button">.btn–s</button></p>
+<h2 id="states">States</h2>
+<h3 id="disabled">Disabled</h3>
+<p><button disabled="true" class="btn btn--disabled" type="button">.btn–disabled</button></p>
+<h3 id="block">Block</h3>
+<p><button class="btn btn--primary btn--block" type="button">.btn–block</button></p>
 
         </div>
     </div>

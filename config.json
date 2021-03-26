@@ -6,7 +6,6 @@
   },
   "plugins": [
     "./plugins/slate.coffee",
-    "./plugins/page.coffee",
     "wintersmith-ejs"
   ],
   "sassify": {

@@ -1,5 +1,6 @@
 @import url('/css/fonts/inter.css');
-@import url('/css/slate.css');
+@import url('/css/slate/slate.css');
+
 [data-theme="docs"] {
   --color-primary: #157efb;
   --font-primary: 'Inter', sans-serif;
@@ -210,112 +211,112 @@ pre.code {
   border: 2px solid var(--color-primary);
 }
 .docs-bg--primary-a-10 {
-  background-color: var(--color- primary-a-10);
+  background-color: var(--color-primary-a-10);
 }
 .docs-bg--primary-a-20 {
-  background-color: var(--color- primary-a-20);
+  background-color: var(--color-primary-a-20);
 }
 .docs-bg--primary-a-30 {
-  background-color: var(--color- primary-a-30);
+  background-color: var(--color-primary-a-30);
 }
 .docs-bg--primary-a-40 {
-  background-color: var(--color- primary-a-40);
+  background-color: var(--color-primary-a-40);
 }
 .docs-bg--primary-a-50 {
-  background-color: var(--color- primary-a-50);
+  background-color: var(--color-primary-a-50);
 }
 .docs-bg--primary-a-60 {
-  background-color: var(--color- primary-a-60);
+  background-color: var(--color-primary-a-60);
 }
 .docs-bg--primary-a-70 {
-  background-color: var(--color- primary-a-70);
+  background-color: var(--color-primary-a-70);
 }
 .docs-bg--primary-a-80 {
-  background-color: var(--color- primary-a-80);
+  background-color: var(--color-primary-a-80);
 }
 .docs-bg--primary-a-90 {
-  background-color: var(--color- primary-a-90);
+  background-color: var(--color-primary-a-90);
 }
 .docs-bg--accent-a-10 {
-  background-color: var(--color- accent-a-10);
+  background-color: var(--color-accent-a-10);
 }
 .docs-bg--accent-a-20 {
-  background-color: var(--color- accent-a-20);
+  background-color: var(--color-accent-a-20);
 }
 .docs-bg--accent-a-30 {
-  background-color: var(--color- accent-a-30);
+  background-color: var(--color-accent-a-30);
 }
 .docs-bg--accent-a-40 {
-  background-color: var(--color- accent-a-40);
+  background-color: var(--color-accent-a-40);
 }
 .docs-bg--accent-a-50 {
-  background-color: var(--color- accent-a-50);
+  background-color: var(--color-accent-a-50);
 }
 .docs-bg--accent-a-60 {
-  background-color: var(--color- accent-a-60);
+  background-color: var(--color-accent-a-60);
 }
 .docs-bg--accent-a-70 {
-  background-color: var(--color- accent-a-70);
+  background-color: var(--color-accent-a-70);
 }
 .docs-bg--accent-a-80 {
-  background-color: var(--color- accent-a-80);
+  background-color: var(--color-accent-a-80);
 }
 .docs-bg--accent-a-90 {
-  background-color: var(--color- accent-a-90);
+  background-color: var(--color-accent-a-90);
 }
 .docs-bg--gray-a-10 {
-  background-color: var(--color- gray-a-10);
+  background-color: var(--color-gray-a-10);
 }
 .docs-bg--gray-a-20 {
-  background-color: var(--color- gray-a-20);
+  background-color: var(--color-gray-a-20);
 }
 .docs-bg--gray-a-30 {
-  background-color: var(--color- gray-a-30);
+  background-color: var(--color-gray-a-30);
 }
 .docs-bg--gray-a-40 {
-  background-color: var(--color- gray-a-40);
+  background-color: var(--color-gray-a-40);
 }
 .docs-bg--gray-a-50 {
-  background-color: var(--color- gray-a-50);
+  background-color: var(--color-gray-a-50);
 }
 .docs-bg--gray-a-60 {
-  background-color: var(--color- gray-a-60);
+  background-color: var(--color-gray-a-60);
 }
 .docs-bg--gray-a-70 {
-  background-color: var(--color- gray-a-70);
+  background-color: var(--color-gray-a-70);
 }
 .docs-bg--gray-a-80 {
-  background-color: var(--color- gray-a-80);
+  background-color: var(--color-gray-a-80);
 }
 .docs-bg--gray-a-90 {
-  background-color: var(--color- gray-a-90);
+  background-color: var(--color-gray-a-90);
 }
 .docs-bg--danger-a-10 {
-  background-color: var(--color- danger-a-10);
+  background-color: var(--color-danger-a-10);
 }
 .docs-bg--danger-a-20 {
-  background-color: var(--color- danger-a-20);
+  background-color: var(--color-danger-a-20);
 }
 .docs-bg--danger-a-30 {
-  background-color: var(--color- danger-a-30);
+  background-color: var(--color-danger-a-30);
 }
 .docs-bg--danger-a-40 {
-  background-color: var(--color- danger-a-40);
+  background-color: var(--color-danger-a-40);
 }
 .docs-bg--danger-a-50 {
-  background-color: var(--color- danger-a-50);
+  background-color: var(--color-danger-a-50);
 }
 .docs-bg--danger-a-60 {
-  background-color: var(--color- danger-a-60);
+  background-color: var(--color-danger-a-60);
 }
 .docs-bg--danger-a-70 {
-  background-color: var(--color- danger-a-70);
+  background-color: var(--color-danger-a-70);
 }
 .docs-bg--danger-a-80 {
-  background-color: var(--color- danger-a-80);
+  background-color: var(--color-danger-a-80);
 }
 .docs-bg--danger-a-90 {
-  background-color: var(--color- danger-a-90);
+  background-color: var(--color-danger-a-90);
 }
 .docs-not-only-demo div[class^="not"] {
   border-radius: var(--space-s);
