@@ -2,7 +2,7 @@
   "locals": {
     "url": "http://localhost:8080",
     "name": "slate-css",
-    "version": "0.1.0-alpha.11"
+    "version": "0.1.0-alpha.12"
   },
   "plugins": [
     "./plugins/slate.coffee",
