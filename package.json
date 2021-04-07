@@ -3,10 +3,10 @@
   "scripts": {
     "dev": "wintersmith preview",
     "build": "wintersmith build",
-    "cp:slate": "cp ./node_modules/@dsbn/slate-css/css/slate.css ./contents/css/slate.css"
+    "cp:slate": "cp -r ../slate-css/css/* ./contents/css/slate/"
   },
   "dependencies": {
-    "@dsbn/slate-css": "^0.1.0-alpha.12",
+    "@dsbn/slate-css": "^0.1.0-alpha.14",
     "coffeedoc": "~0.3.1",
     "marked": "~0.3.5",
     "shelljs": "^0.5.3",

@@ -1,5 +1,5 @@
 @import url('/css/fonts/inter.css');
-@import url('/css/slate/slate.css');
+@import url('slate/slate.css');
 
 [data-theme="docs"] {
   --color-primary: #157efb;
